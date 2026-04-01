@@ -1,0 +1,24 @@
+{
+  "name": "urgencias-node",
+  "version": "1.0.0",
+  "description": "Proyecto para emergencias médicas",
+  "keywords": [
+    "software",
+    "medico"
+  ],
+  "license": "ISC",
+  "author": "Liliana Garcia",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
