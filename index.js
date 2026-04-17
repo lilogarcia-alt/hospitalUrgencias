@@ -17,6 +17,7 @@ app.set('layout', 'layouts/layout')
 const mainRouter = require("./src/routes/main.routes");
 app.use(mainRouter);
 app.use("/contacto", require("./src/routes/contacto.router"))
+app.use("/pacientes", require("./src/routes/pacientes.router"))
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => console.log(`http://localhost:${PORT}`))
