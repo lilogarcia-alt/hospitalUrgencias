@@ -1,11 +1,64 @@
 <h1>Crear Pacientes</h1>
 
-<form class="form" action="/pacientes" method="post">
-    <div class="form_group">
-        <label for="form__label" for="nombre">Nombre: </label>
-        <input class="form__input" type="text" name="name" id="nombre">
+<form action="/pacientes" method="post" class="container mt-4">
+
+  <div class="card shadow">
+    <div class="card-header bg-primary text-white">
+      <h5 class="mb-0">Registro de Paciente</h5>
+    </div>
+
+    <div class="card-body">
+
+      <!-- Nombre -->
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" name="nombre" id="nombre" class="form-control" required>
+      </div>
+
+      <!-- Email -->
+      <div class="mb-3">
+        <label for="email" class="form-label">Correo electrónico</label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="ejemplo@correo.com" required>
+      </div>
+
+      <!-- EPS -->
+      <div class="mb-3">
+        <label for="eps" class="form-label">EPS</label>
+        <select name="eps" id="eps" class="form-select" required>
+          <option value="">Seleccione una opción</option>
+          <option value="Sura">Sura</option>
+          <option value="Sanitas">Sanitas</option>
+          <option value="Nueva EPS">Nueva EPS</option>
+          <option value="Coomeva">Coomeva</option>
+        </select>
+      </div>
+
+      <!-- Género -->
+      <div class="mb-3">
+        <label class="form-label">Género</label>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="genero" id="masculino" value="Masculino" required>
+          <label class="form-check-label" for="masculino">Masculino</label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="genero" id="femenino" value="Femenino">
+          <label class="form-check-label" for="femenino">Femenino</label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="genero" id="otro" value="Otro">
+          <label class="form-check-label" for="otro">Otro</label>
+        </div>
+      </div>
 
     </div>
-   <button class="button button--primary" type="submit">Guardar</button>
+
+    <!-- Botón -->
+    <div class="card-footer text-end">
+      <button type="submit" class="btn btn-primary">Guardar</button>
+    </div>
+  </div>
 
 </form>
