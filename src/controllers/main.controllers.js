@@ -8,7 +8,7 @@ const pacientes = (req,res) => {
    res.render("pacientes");
 };
 
-const private = (req,res) => {
+const privada = (req,res) => {
     console.log(__dirname)
     res.sendFile(path.resolve(__dirname, '../../private/index.html'));
 };
@@ -16,6 +16,6 @@ const private = (req,res) => {
 module.exports = {
     index,
     pacientes,
-    private
+    privada
     
 }

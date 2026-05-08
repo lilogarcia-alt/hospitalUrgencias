@@ -4,6 +4,8 @@ require("dotenv").config();
 const express = require("express");
 const app = express();
 
+module.exports = app;
+
 const layouts = require('express-ejs-layouts')
 const path = require("path");
 

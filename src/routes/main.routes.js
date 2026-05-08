@@ -3,7 +3,7 @@ const router = express.Router();
 
 const controller = require("../controllers/main.controllers");
 router.get("/", controller.index);
-router.get("/privada", controller.private);
+router.get("/privada", controller.privada);
 router.get("/pacientes", controller.pacientes);
 
 module.exports = router;
